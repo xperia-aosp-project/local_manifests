@@ -1,4 +1,29 @@
-This repository contains the local_manifests used by the Sony Open Devices project
+Create omnirom directory to load sources:
+```bash
+mkdir ~/omnirom
+cd ~/omnirom
+repo init -u git://github.com/omnirom/android.git -b android-7.1'
+```
 
-Please follow the build instructions from Sony Developer World
-http://developer.sonymobile.com/open-devices/
+Then use the following commands to load local_manifests for omnirom:
+
+```bash
+cd .repo
+git clone https://github.com/xperia-aosp-project/local_manifests
+cd local_manifests
+git checkout omnirom
+cd ../..
+```
+
+Then sync tour sources using
+
+```bash
+repo sync
+```
+
+Build rom like any other aosp rom using:
+
+```bash
+source build/envsetup.sh && lunch
+make –j <insert the cpu thread number of your computer>
+```
