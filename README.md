@@ -24,6 +24,6 @@ repo sync
 Build rom like any other aosp rom using:
 
 ```bash
-source build/envsetup.sh && lunch
-make –j <insert the cpu thread number of your computer>
+source build/envsetup.sh
+brunch <device_name>
 ```
