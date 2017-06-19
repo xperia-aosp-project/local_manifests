@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 <remote name="sony" fetch="https://github.com/sonyxperiadev/" />
+<remote name="aosp" fetch="https://github.com/xperia-aosp-project/" />
 <project path="device/sony/sepolicy" name="device-sony-sepolicy" groups="device" remote="sony" revision="master" />
 <project path="device/sony/common" name="device-sony-common" groups="device" remote="sony" revision="master" />
 <project path="device/sony/common-init" name="device-sony-common-init" groups="device" remote="sony" revision="master" />
@@ -17,7 +18,7 @@
 <!--msm8996-->
 <project path="device/sony/tone" name="device-sony-tone" groups="device" remote="sony" revision="master" />
 <project path="device/sony/dora" name="device-sony-dora" groups="device" remote="sony" revision="master" />
-<project path="device/sony/kagura" name="device-sony-kagura" groups="device" remote="sony" revision="master" />
+<project path="device/sony/kagura" name="device-sony-kagura" groups="device" remote="aosp" revision="carbonrom" />
 <project path="device/sony/keyaki" name="device-sony-keyaki" groups="device" remote="sony" revision="master" />
 
 <!--msm8998-->
